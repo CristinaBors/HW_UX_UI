@@ -1,9 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-    font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 200px;
-        font-style: normal;
+
 }
 
 a {
@@ -16,11 +13,33 @@ body {
 
 .navbar {
     background-color: #555;
+    /*text-align: center;*/
 }
 
 .navbar li {
     display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
 }
+
 .navbar a {
     color: white;
+}
+
+.navbar a:hover {
+    /*text-decoration: underline;*/
+    /*border-bottom: 1px solid white;*/
+}
+
+.navbar a:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid transparent;
+    transform: translate(-100%);
+    transition: 0.5s;
+}
+
+navbar a:hover::after {
+    border-bottom-color: white;
+    transform: translateX(0%);
 }
