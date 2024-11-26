@@ -1,0 +1,45 @@
+body {
+    font-family: "DM Serif Text", serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f7f2f2;
+}
+
+.navbar {
+    background-color: rgb(195, 135, 57);
+    
+    box-shadow: 5px 5px rgb(168, 102, 15);
+    display: table;
+    width: 100%;
+}
+
+.navbar ul {
+    display: table-row;
+}
+
+.navbar li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navbar li:first-child {
+    padding: 0 100px 0 20px;
+    text-align: left;
+}
+
+.navbar li:last-child {
+    padding: 0 20px 0 100px;
+    text-align: right;
+}
+
+.navbar a {
+    color: rgb(100, 64, 22);
+    text-shadow: 3px 3px #ba8787;
+}
