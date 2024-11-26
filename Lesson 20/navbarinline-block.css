@@ -1,0 +1,26 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200px;
+        font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #333;
+}
+
+.navbar {
+    background-color: #555;
+}
+
+.navbar li {
+    display: inline-block;
+}
+.navbar a {
+    color: white;
+}
