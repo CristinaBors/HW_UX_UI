@@ -1,5 +1,5 @@
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Gabarito", sans-serif;
 
 }
 
@@ -8,22 +8,22 @@ a {
 }
 
 body {
-    background-color: #333;
+    background-color: #f7f2f2;
 }
 
 .navbar {
-    background-color: #555;
-    /*text-align: center;*/
+    background-color: #ddd388;
+    text-align: right;
 }
 
 .navbar li {
     display: inline-block;
     vertical-align: middle;
-    padding: 5px;
+    padding: 5px ;
 }
 
 .navbar a {
-    color: white;
+    color: rgb(168, 102, 15);
 }
 
 .navbar a:hover {
@@ -31,15 +31,15 @@ body {
     /*border-bottom: 1px solid white;*/
 }
 
-.navbar a:hover::after {
+.navbar a::after {
     content: "";
     display: block;
     border-bottom: 1px solid transparent;
-    transform: translate(-100%);
+    transform: translateX(100%);
     transition: 0.5s;
 }
 
-navbar a:hover::after {
-    border-bottom-color: white;
+.navbar a:hover::after {
+    border-bottom-color: rgb(69, 30, 34);
     transform: translateX(0%);
 }
