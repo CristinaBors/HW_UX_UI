@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 200px 0;
+
+}
+
+.plans {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.plans header {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.plans header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #444;
+    padding-bottom: 20px;
+}
+
+.plans header h2 {
+    color: #777;
+}
+
+.plans .row>* {
+    display: inline-block;
+    width: 17%;
+    vertical-align: top;
+    
+}
+
+
+.plans .row > ul {
+    vertical-align: left;
+    padding: 25px;
+    border: 1px solid #777;
+    margin: 0 15px;
+   
+}
+
+.plans .row .basic{
+    margin: 0 0 30px;
+        padding: 20px 0 30px;
+        border-bottom: 1px solid #777;
+}
+
+.plans .row .business {
+    background-color: #005BEA;
+    
+}
+
+.plans .row .basicb {
+    margin: 0 0 30px;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #fff;
+    
+}
+
+
+.plans .row li {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 10px 0;
+    
+}
+
+
+.plans .row h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+    margin: 0 0 10px;
+}
+
+.plans .row h4 {
+    font-size: 32px;
+    
+    color: #444444;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.plans .row span {
+    font-size: 16px;
+}
+
+.plans .row p {
+    font-size: 13px;
+    margin: 0 0 15px;
+    color: #777;
+}
+
+.user > li::before {   
+            content: "✓";
+            color: green;
+            padding: 10px;       
+}
+.user>li.not-available::before {
+            content: "✗";
+             color: red;
+}
+
+.row button {
+    font: 12px;
+    color: #FFF;
+    background-color: #005BEA;
+    padding:  15px;
+    border-radius: 25px;
+    margin: 20px 20px 12px 0;
+    
+}
