@@ -46,8 +46,8 @@ body {
    
 }
 
-.plans .row .basic{
-    margin: 0 0 30px;
+.plans .row .basic {
+        margin: 0 0 30px;
         padding: 20px 0 30px;
         border-bottom: 1px solid #777;
 }
@@ -60,9 +60,17 @@ body {
 .plans .row .basicb {
     margin: 0 0 30px;
     padding: 20px 0 30px;
-    border-bottom: 1px solid #fff;
-    
+    border-bottom: 1px solid #fff   
 }
+.plans .row .white {
+    color:white
+}
+
+.plans .row .bwhite {
+    background-color: #FFF;
+    color: #333;
+}
+
 
 
 .plans .row li {
@@ -72,7 +80,6 @@ body {
     
 }
 
-
 .plans .row h3 {
     font-size: 16px;
     font-weight: 700;
@@ -80,9 +87,9 @@ body {
     margin: 0 0 10px;
 }
 
+
 .plans .row h4 {
-    font-size: 32px;
-    
+    font-size: 32px;   
     color: #444444;
     font-weight: 700;
     margin: 0 0 15px;
