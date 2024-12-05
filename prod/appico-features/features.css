@@ -56,3 +56,24 @@ body {
     padding: 20px 0;
     color: #777;
 }
+
+.features .row p {
+    padding: 20px 0;
+    color:#777
+}
+
+.features li .icon {
+    transform: translateY(-138px) translateX(45px);
+    background: rgb(176, 173, 173);
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    float: right;
+    
+    
+}
+
+.features li .icon  svg {
+    
+    transform: translateY(6px) translateX(-7px);
+}
