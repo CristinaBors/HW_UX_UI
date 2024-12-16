@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+}
+
+nav {
+    border-bottom: 1px solid white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a.active {
+    color: yellow;
+}
+
+/*.container {
+    height: 90vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
+section {
+    height:100vh;
+    border-bottom: 1px dotted white;
+}

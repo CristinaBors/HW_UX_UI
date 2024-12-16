@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Spy</title>
+    <link rel="stylesheet" href="scroll.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.5.3/simple-scrollspy.min.js"
+        integrity="sha512-PyQeHZHB7o79YSx8IzS5zHBc6srOihJUETBLrAi8zA3nntuYfGfDthlvXnQJ/32Z1Voxa2M3FDrQUXIfz3CDqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        window.onload = function () {
+            scrollSpy('#navbar', {
+                sectionClass: '.scrollspy',
+                
+            })
+        }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#s-1">Lorem</a>
+        <a href="#s-2">Soluta</a>
+        <a href="#s-3">Cumque</a>
+        <a href="#s-4">Sunt</a>
+        <a href="#s-5">Reiciendis</a>
+    </nav>
+    <!--<div class="container">-->
+        <section id="s-1" class="scrollspy">
+            <h2>1. Lorem, ipsum.</h2>
+        </section>
+        <section id="s-2" class="scrollspy">
+            <h2>2. Soluta, ullam?</h2>
+        </section>
+        <section id="s-3" class="scrollspy">
+            <h2>3. Cumque, et.</h2>
+        </section>
+        <section id="s-4" class="scrollspy">
+            <h2>4. Sunt, consequuntur.</h2>
+        </section>
+        <section id="s-5" class="scrollspy">
+            <h2>5. Reiciendis, asperiores!</h2>
+        </section>
+    <!--</div>-->
+    
+</body>
+</html>
