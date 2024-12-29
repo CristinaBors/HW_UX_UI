@@ -1,0 +1,101 @@
+body {
+    font-family: "Poppins", sans-serif;
+    
+    background-color: #222;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.greedy-nav {
+    background-color: #fff;
+
+    display: table;
+    width: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.greedy-nav ul {
+    display: table-row;
+}
+
+.greedy-nav ul li {
+    display: table-cell;
+    border-right: 1px solid #222;
+    padding: 1em;
+
+    min-width: 5em;
+}
+
+.greedy-nav ul li.burgher {
+    display: none;
+    width: 1em;
+    background-color: #555;
+
+}
+
+.greedy-nav ul li.burgher a{
+    color: white;
+}
+
+.greedy-nav ul li:last-child {
+    border-right: none;
+
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1140px) {
+    .greedy-nav li.lg {
+        display: none;
+    }
+    .greedy-nav ul li.burgher {
+            display: table-cell;
+            position: relative;
+    
+        }
+    .greedy-nav ul li.burgher::before{
+        content: "2";
+        color: white;
+        position: absolute;
+        background-color: red;
+        display: block;
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        padding: 0.25em;
+        left: -0.75em;
+    }
+}
+
+@media (max-width: 900px) {
+    .greedy-nav li.md {
+        display: none;
+    }
+        .greedy-nav ul li.burgher::before {
+            content: "4";
+        }
+        #greedy:target .lg,
+        #greedy:target .md {
+        
+            display: block;
+            position: absolute;
+        }
+
+         #greedy:target .md:nth-child(6) {
+            top:2.5em
+         }
+         #greedy:target .md:nth-child(7) {
+                     top: 5.0em;
+        }
+        #greedy:target .lg:nth-child(8) {
+                    top: 7.5em;
+        }
+         #greedy:target .lg:nth-child(9) {
+                    top: 10.0em;
+        }
+}
+
