@@ -1,0 +1,91 @@
+.card {
+
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(52, 58, 64, .08);
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    width: 30%;
+    margin: 20px;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #444;
+    margin: 10px 0px;
+}
+
+
+.card h4 {
+    font-size: 36px;
+    color: #1f61eb;
+    font-weight: 700;
+    margin: 16px 0 0;
+}
+
+.card span {
+    font-size: 16px;
+    color:#98A6AD;
+}
+
+.card .plantype {
+    text-align: center;
+    padding: 24px;
+    margin-bottom: 24px;
+    background-color: #f8f9fa;
+}
+
+
+.user>li::before {
+    content: "✓";
+    color: green;
+    padding: 10px;
+}
+
+.card .user {
+    margin: 0 0 48px;
+    padding: 8px 0 0;
+}
+
+.card .user li {
+    font-size: 15px;
+    color: #536976;
+    margin: 16px 0;
+
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn  {
+    
+    background: linear-gradient(90deg, #1f61eb 0, #94b4f5);
+    border: none;
+    box-shadow: 0 5px 20px rgba(52, 58, 64, .1);
+    color: #fff;
+    border-radius: 0.375rem;
+
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        width: 100%;
+            
+        
+
+}
+
+
