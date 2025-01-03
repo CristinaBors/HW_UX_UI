@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 .card {
 
     background-color: #fff;
@@ -8,6 +12,24 @@
     position: relative;
     width: 30%;
     margin: 20px;
+}
+
+.card .label {
+    background-color: red;
+    color: white;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    background-color: #eb1f52;
+        box-shadow: 0 2px 8px rgba(16, 22, 30, .3);
+        color: #fff;
+        font-size: 13px;
+        padding: 2px 40px;
+        position: absolute;
+        right: -40px;
+        text-transform: uppercase;
+        top: 40px;
 }
 
 *,
