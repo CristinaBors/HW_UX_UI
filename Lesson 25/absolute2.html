@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS POSITION: absolute</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+        }
+
+        .parent {
+            border: 5px solid black;
+            padding: 5px;
+            margin: 20px;
+
+            display: inline-block;
+
+
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .parent .child-1 {
+            background: orange;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+
+            
+        }
+
+        .parent .child-2 {
+            background: brown;
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+
+            bottom: -105px;
+            right: -105px;
+        }
+
+        
+    </style>
 </head>
 <body>
+
+    <div class="parent">
+        <div class="child-1">
+            <div class="child-2"></div>
+        </div>
+    </div>
     
 </body>
 </html>
