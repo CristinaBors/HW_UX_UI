@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITION: relative</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+        }
+
+        .parent {
+            border: 5px solid black;
+            padding: 5px;
+            margin: 20px;
+
+            display: inline-block;
+        }
+
+        .parent > div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .parent .d-1 {
+            background-color: brown;
+
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            
+        }
+
+        .parent .d-2 {
+            background-color: darkorange;
+
+            /*NEW*/
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: -1;
+
+        }
+
+        .parent .d-3 {
+            background-color: grey;
+
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: -2;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="d-1">1</div>
+        <div class="d-2">2</div>
+        <div class="d-3">3</div>
+    </div>
+    
+</body>
+</html>
