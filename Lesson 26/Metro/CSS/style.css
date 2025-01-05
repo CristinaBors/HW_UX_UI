@@ -1,0 +1,24 @@
+.raleway-300> {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.raleway-500> {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.RakSunglass {
+
+    position: absolute;
+        top: 100px;
+        bottom: 100px;
+    
+}
+
