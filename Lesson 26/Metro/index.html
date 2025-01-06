@@ -13,49 +13,92 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
     
 </head>
 <body class="raleway-300">
 
     <header>
-        <ol>
-            <li >
-                <div class="RakSunglass">
+        <div class="swiper mySwiper">
+        <ol class="swiper-wrapper">
+            <li class="swiper-slide">
+                
+                <div class="swiper-content-right">
                 <h1>Rak Sunglass</h1>
-                <h2>2016 Colllection</h2>
-                <p>Ehen an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <h2>2016 Collection</h2>
+                <p>Ehen an unknown printer took a galley of type and scrambled <br> it to make a type specimen book.
                 
                 It has survived not only five centuriesknowd.</p>
-            <a href="">SHOP NOW</a></li>
-            </div>
+                <a href="">SHOP NOW</a>
+                </div>
+            
+            
                 <img  src="images/1.webp" alt="">
                 
-            <li>
-                <div class="newcollection">
-                <h1>New Collection Is
+            </li>
+                
+            <li class="swiper-slide">
+                <div class="swiper-content-left">
+                
+                <h1><span style="font-weight:bold">New Collection</span> Is </br>
                 Available Here</h1>
                 
-                <p>Smply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                <p>Smply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the
                 
                 industry's standard dummy text ever since.</p>
-                <a href="">SHOP NOW</a></li>
+                <a href="">SHOP NOW</a>
                 </div>
-                <img src="images/2.webp" alt="">
                 
-            <li>
-                <div class="newcollection">
+                <img src="images/2.webp" alt="">
+            </li>
+                
+            <li class="swiper-slide">
+
+                <div class="swiper-content-left">
+                
                 <h1>Rak Sunglass</h1>
-                <h2>2016 Colllection</h2>
-                <p>Ehen an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <h2>2016 Collection</h2>
+                <p>Ehen an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
                 
                 It has survived not only five centuriesknowd.</p>
-                <a href="">SHOP NOW</a></li>
+                <a href="">SHOP NOW</a>
                 </div>
+                
                 <img src="images/2.webp" alt="">
+            </li>
                 
         </ol>
+    <div class="swiper-pagination"></div>
+
+        </div>
     </header>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: { 
+            delay: 3000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+            }
+        });
+    </script>
     
 </body>
 </html>

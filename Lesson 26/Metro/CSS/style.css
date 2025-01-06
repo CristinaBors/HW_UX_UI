@@ -12,13 +12,99 @@
     font-style: normal;
 }
 
+.mySwiper {
+    margin: 0 20px;
 
-
-.RakSunglass {
-
-    position: absolute;
-        top: 100px;
-        bottom: 100px;
-    
 }
 
+
+.mySwiper img {
+
+    width: 100%;
+}
+
+.mySwiper .swiper-content-right {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 100px;
+    color: #212121;
+}
+
+.mySwiper .swiper-content-left {
+    position: absolute;
+    height: 100%;
+    display:flex;
+    right: 0 ;
+    flex-direction: column;
+    justify-content: right;
+
+    padding: 100px;
+    color: #212121;
+}
+
+.swiper-content-right h1 {
+    border-bottom-color: rgb(182, 182, 182);
+    border-bottom-style: solid; 
+    border-bottom-width: 0.8px; 
+    box-sizing: border-box color rgb(33, 33, 33);
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    height: 78.8px;
+    left: 60.8px;
+    letter-spacing: 12px;
+    line-height: 78px;
+    text-align: left;
+}
+
+.swiper-content-left h1 {
+    
+    box-sizing: border-box color rgb(33, 33, 33);
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    text-align: right;
+    letter-spacing: 12px;
+    line-height: 78px;
+}
+
+.swiper-slide h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 18px;
+    line-height: 78px;
+    display: flex;
+    order: -1;
+    text-align: center;
+    
+        
+}
+
+
+
+
+.swiper-slide p {
+    font-size: 25px;
+    font-weight: 300;
+    
+    
+    text-size-adjust: 100%;
+}
+.swiper-slide a {
+    background-color: #353333;
+    color: antiquewhite;
+    padding: 20px 15px ;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    width: 250px;
+    height: 30px;
+    letter-spacing: 12px;
+}
