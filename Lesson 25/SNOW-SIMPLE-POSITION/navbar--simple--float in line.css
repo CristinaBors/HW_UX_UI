@@ -1,0 +1,82 @@
+ .raleway-chat {
+     font-family: "Raleway";
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+ }
+ 
+ ul {
+    
+    font-family: "Raleway";
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: rgb(76 102 133); 
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+#navbar ul {
+    
+    vertical-align: middle;
+    padding: 0 170px 0 50px;
+    
+}
+
+#navbar li {
+    display: inline-flex;
+    vertical-align: middle;
+
+}
+#navbar li a {
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    
+}
+
+
+#navbar .nav-brand {
+    display: inline;
+    margin-right: 120px;
+    text-transform:uppercase
+    
+}
+
+#navbar .nav-brand .image {
+    padding: 9px;
+    
+}
+
+#navbar .nav-main  {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: 20px;
+    padding: 0 10px;
+ 
+   
+}
+
+
+
+#navbar .nav-user {
+    display: inline-flex;
+    margin-left: 220px;
+
+}
+
+
+
+
+
+
