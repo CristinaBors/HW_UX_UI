@@ -1,0 +1,53 @@
+ol,ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+}
+
+ol {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 80%;
+    height: 70vh;
+    position: relative;
+}
+
+ul li {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+
+    transition: 1s;
+}
+
+ul li:target {
+    opacity: 1;
+}
+
+section:has(#ch1:target) a[href="#ch1"] {
+    color: red;
+}
+
+section:has(#ch2:target) a[href="#ch2"] {
+    color: red;
+}
+
+section:has(#ch3:target) a[href="#ch3"] {
+    color: red;
+}
