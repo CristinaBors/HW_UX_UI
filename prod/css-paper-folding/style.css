@@ -1,0 +1,70 @@
+body {
+    /*background-color: #333;*/
+    background-image: url(paper.png);
+}
+
+.paper-effect {
+    width: 1000px;
+    height: 600px;
+
+    border: 10px solid white;
+
+
+    /* perfect H/V center */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+
+    margin: auto;
+
+    /*turn on 3D*/
+
+    perspective: 1000px;
+}
+
+
+.paper-effect > div {
+    border: 1px solid black;
+    width: 198px;
+    height: 598px;
+    float: left;
+
+    background-image: url(fall.jpg);
+}
+
+
+
+.paper-effect >div:nth-child(2) {
+    background-position: -200px 0px;
+    
+    transform: 
+        translateX(-50px)
+        rotateY(-45deg)
+        scaleY(1.07);
+}
+
+
+
+.paper-effect>div:nth-child(3) {
+    background-position: -400px 0px;
+
+    transform:
+            translateX(-110px) rotateY(45deg) scaleY(1.07);
+}
+
+.paper-effect>div:nth-child(4) {
+    background-position: -600px 0px;
+
+    transform:
+            translateX(-170px) rotateY(-45deg) scaleY(1.07);
+}
+
+.paper-effect>div:nth-child(5) {
+    background-position: -800px 0px;
+    transform:
+            translateX(-230px) rotateY(45deg) scaleY(1.07);
+}
+
