@@ -7,6 +7,8 @@ body {
     background-color: #2378af;
     margin: 0;
     padding: 0;
+   
+    
 }
 
 .overlay {
@@ -36,6 +38,7 @@ body {
     left: 200px;
     font-family: "Pacifico";
     font-size: 100px;
+    font-weight: 100;
     color: aliceblue;
 
     
@@ -168,5 +171,7 @@ body {
     from { top: -20%; }
     to { top: 100%; }
 }
+
+
 
 
