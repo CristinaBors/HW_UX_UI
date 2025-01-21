@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+}
+
+body {
+    /*background-color: #222;*/
+    margin: 0;
+    color: white;
+    font-size: 30px;
+
+    background-image: 
+    radial-gradient(#888, #222);
+
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.carousel {
+   /* border: 10px solid #555;*/
+    width: 500px;
+    height: 700px;
+    
+    position: relative;
+
+    perspective: 1000px;
+
+    top: 100px;
+    left: 50px;
+}
+
+.carousel .slide {
+    width: 500px;
+    height: 700px;
+    /* border: 1px solid green;*/
+
+    position: absolute;
+
+    transition: transform 1s; z-index: 1s 0.8s;
+
+    
+}
+
+.carousel .slide a {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+
+.carousel .slide a::after {
+    content: url(arrow_forward_ios_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg);
+    background-color: #fff8;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 18px;
+    padding: 3px;
+}
+
+.carousel .slide:nth-child(1) {
+    
+    transform: rotateY(-30deg) translateZ(-400px);
+    filter: brightness(80%);
+    opacity: 0.5;
+
+}
+
+.carousel .slide:nth-child(2) {
+    
+    transform: rotateY(-30deg) translateZ(-200px);
+    filter: brightness(90%);
+    opacity: 0.75;
+}
+
+.carousel .slide:nth-child(3) {
+    
+    transform: rotateY(-30deg) translateZ(0px)
+}
+
+/* CAROUSEL SLIDE STATES */
+#state-3:target .slide:nth-child(2) {
+    transform: rotateY(-30deg) translateZ(0px);
+    z-index: 3;
+    filter: brightness(100%);
+    opacity: 1;
+
+}
+
+#state-3:target .slide:nth-child(3) {
+    transform: rotateY(-30deg) translateZ(-400px);
+    z-index: 1;
+    filter: brightness(80%);
+    opacity: 0.5;
+}
+
+#state-3:target .slide:nth-child(1) {
+    transform: rotateY(-30deg) translateZ(-200px);
+    z-index: 2;
+    filter: brightness(90%);
+    opacity: 0.75;
+}
+
+
+#state-2:target .slide:nth-child(1) {
+    transform: rotateY(-30deg) translateZ(0px);
+    z-index: 3;
+    filter: brightness(100%);
+    opacity: 1;
+
+}
+
+#state-2:target .slide:nth-child(2) {
+    transform: rotateY(-30deg) translateZ(-400px);
+    z-index: 1;
+    filter: brightness(80%);
+    opacity: 0.5;
+}
+
+#state-2:target .slide:nth-child(3) {
+    transform: rotateY(-30deg) translateZ(-200px);
+    z-index: 2;
+    filter: brightness(90%);
+    opacity: 0.75;
+}
+
+
+#state-1:target .slide:nth-child(3) {
+    transform: rotateY(-30deg) translateZ(0px);
+    z-index: 3;
+    filter: brightness(100%);
+    opacity: 1;
+
+}
+
+#state-1:target .slide:nth-child(1) {
+    transform: rotateY(-30deg) translateZ(-400px);
+    z-index: 1;
+    filter: brightness(80%);
+    opacity: 0.5;
+}
+
+#state-1:target .slide:nth-child(2) {
+    transform: rotateY(-30deg) translateZ(-200px);
+    z-index: 2;
+    filter: brightness(90%);
+    opacity: 0.75;
+}

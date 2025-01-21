@@ -1,0 +1,24 @@
+body { margin:0;}
+
+iframe {
+    position: absolute;
+    z-index: -1;
+}
+
+label {
+    position: absolute;
+    bottom: 2%;
+}
+
+div {
+   position: absolute;
+   bottom: -28%;
+   height: 30%;
+   width: 100%;
+   background: green;
+}
+
+section:has(input:checked) div {
+    bottom: 0;
+    
+}
