@@ -52,31 +52,27 @@ section:has(input:checked) .lucide-settings {
     align-items: center;
     
     border-radius: 10px;
-    padding: 0px;
-    margin-top: 20px;
-    
-    
-
    
 }
 
 .soundbuttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
        
             
 }
 
 .audio-player button {
     background-color: #7ccde9;
+    display: inline-block;
     border: none;
     color: white;
-    padding: 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    padding: 16px 10px;
+ 
+    
+    
+    
     margin: 8px 2px ;
     border-radius: 5px;
     cursor: pointer;
