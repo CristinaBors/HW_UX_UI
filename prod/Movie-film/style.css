@@ -1,0 +1,85 @@
+body {
+    /*background-color: #334;*/
+    background-image: url(https://s.yimg.com/ny/api/res/1.2/yMrmF7ZEf8O1bSGB0uXuXA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0zODAwO2NmPXdlYnA-/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/3f35ddd8b121b188e50e346c8fd24028);
+    background-size: cover;
+    background-position: center;
+
+
+    /*SETTINGS*/
+    --size: 40vh;
+    --count: 7;
+}
+
+
+.movies {
+    width: var(--size);
+    height: var(--size);
+    background-color: black;
+
+    margin-top: 
+    calc( ( 100vh - var(--size) ) / 2 );
+
+    margin-left: 
+    calc( 100vw / 3 - var(--size) / 2 );
+}
+
+.movies .film {
+
+    background-color: #333;
+    height: calc(var(--size) * 0.75);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: calc(var(--count) * (var(--size) * 0.75 * 0.92 * 4 / 3 + 1vh ));
+   
+
+}
+
+.movies .controls {
+    background-color: #777;
+    position: absolute;
+    height: calc(var(--size) * 0.8);
+    width: calc(var(--size) * 0.8);
+
+    border-radius: 100%;
+}
+
+.movies .film img {
+    display: none;
+
+    position: relative;
+    top: calc(var(--size) * 0.75 * 0.04) ;
+    height: calc(var(--size) * 0.75 * 0.92);
+    margin: 0 0.5vh;
+}
+
+.movies .controls button {
+    
+    height: calc(var(--size) * 0.15);
+    width: calc(var(--size) * 0.3);
+
+    border-radius: 25%;
+
+    position: relative;
+        top: calc(var(--size) * 0.32);
+        left: calc(var(--size) * 0.25);
+
+
+}
+   /* margin-top:
+            calc((100vh -  (var(--size) * 0.15) )/ 2);
+    
+    margin-left:
+            calc(((100vw / 3 - var(--size) * 0.3)) / 2);
+}
+
+    /*transform: translateX(65px);
+
+
+
