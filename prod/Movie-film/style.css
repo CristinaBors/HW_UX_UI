@@ -3,11 +3,14 @@ body {
     background-image: url(https://s.yimg.com/ny/api/res/1.2/yMrmF7ZEf8O1bSGB0uXuXA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0zODAwO2NmPXdlYnA-/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/3f35ddd8b121b188e50e346c8fd24028);
     background-size: cover;
     background-position: center;
+   
 
 
     /*SETTINGS*/
     --size: 40vh;
     --count: 7;
+    --top-marker: calc(var(--size) * 0.75 * 0.04);
+    --bottom-marker: calc(var(--size) * 0.75 * 0.96);
 }
 
 
@@ -21,11 +24,17 @@ body {
 
     margin-left: 
     calc( 100vw / 3 - var(--size) / 2 );
+
+    border-radius: 50%;
+
+    background-image: radial-gradient(transparent, rgba(55, 92, 129, 0.533));
+
+    
 }
 
 .movies .film {
 
-    background-color: #333;
+    /*background-color: #333;*/
     height: calc(var(--size) * 0.75);
     position: absolute;
     left: 0;
@@ -37,21 +46,47 @@ body {
     margin: auto;
 
     width: calc(var(--count) * (var(--size) * 0.75 * 0.92 * 4 / 3 + 1vh ));
-   
+
+    background-image: linear-gradient(transparent, transparent var(--top-marker),#1238 var(--top-marker), #1238  var(--bottom-marker),transparent),
+   radial-gradient(transparent 50%, #1238 50%),
+   radial-gradient(transparent 50%, #7219 50%);
+
+   background-size: 
+    cover,
+    var(--top-marker) var(--top-marker),
+    var(--top-marker) var(--top-marker);
+
+    background-repeat: 
+        repeat,
+        repeat-x,
+        repeat-x;
+
+    background-position: 
+        top left,
+        top left,
+        bottom left;
 
 }
 
 .movies .controls {
-    background-color: #777;
+    background-color: #777 ;
+    background-image: radial-gradient(transparent, rgba(14, 36, 59, 0.533));
+    
     position: absolute;
     height: calc(var(--size) * 0.8);
     width: calc(var(--size) * 0.8);
 
     border-radius: 100%;
+
+    position: relative;
+    top: calc(var(--size) * 0.1);
+    left: calc(var(--size) * 0.1);
+
+    
 }
 
 .movies .film img {
-    display: none;
+    /*display: none;*/
 
     position: relative;
     top: calc(var(--size) * 0.75 * 0.04) ;
@@ -72,14 +107,4 @@ body {
 
 
 }
-   /* margin-top:
-            calc((100vh -  (var(--size) * 0.15) )/ 2);
-    
-    margin-left:
-            calc(((100vw / 3 - var(--size) * 0.3)) / 2);
-}
-
-    /*transform: translateX(65px);
-
-
 
