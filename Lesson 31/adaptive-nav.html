@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Adaptive NAV | CSS</title>
+    <style>
+        body {
+            background: #333;
+            margin: 0;
+            font-family: Arial;
+
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: #111;
+        }
+
+        .navbar li {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .navbar a {
+            color: white;
+            display: block;
+            padding: 20px;
+        }
+
+        .navbar .bars {
+            display: none;
+        }
+
+        @media (max-width: 760px) {
+            .navbar li {
+                display: none;
+            }
+            .navbar .logo ,
+            .navbar .phone , 
+            .navbar .bars {
+                display: inline-block;
+            }
+            .navbar .bars {
+                position: absolute;
+                right: 20px;
+                top: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li class="logo"><a href="">
+                <img src="https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-05/72/BMW-M3-Challenge-icon.png" alt="">
+            </a></li>
+            <li><a href="">Velit!</a></li>
+            <li><a href="">Rem.</a></li>
+            <li class="phone"><a href="tel:+234242423">+234242423</a></li>
+            <li><a href="">Repudiandae.</a></li>
+            <li><a href="">Facilis?</a></li>
+            <li><a href="">Autem.</a></li>
+            <li class="bars"><img src="https://icons.iconarchive.com/icons/mattahan/buuf/48/Leaf-icon.png" alt=""></li>
+        </ul>
+
+    </nav>
+    
+</body>
+</html>
