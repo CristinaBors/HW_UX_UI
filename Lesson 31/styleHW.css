@@ -1,0 +1,76 @@
+body {
+    background-color: #222;
+    font-family: Arial;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #001;
+    padding: 0 10%;
+    position: relative;
+}
+
+.navbar a {
+
+    color: #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+.navbar a:first-child {
+    font-size: 1.5em;
+    margin-right: 3em;
+    color: white;
+}
+
+
+
+label {
+    display: none;
+}
+
+/* sm styles*/
+@media (max-width: 720px) {
+    .navbar a {
+        display: none;
+    }
+
+    .navbar a:first-child
+     {
+         display: inline-block;
+    }
+
+
+    /*.navbar:target a:nth-child(2),
+    .navbar:target a:nth-child(3),
+    .navbar:target a:nth-child(4),
+    .navbar:target a:nth-child(5) 
+            {
+            display: block;
+            } */
+
+    label   {
+            display: inline-block;
+            position: absolute;
+            right: 10%;
+            top: 0.85em;
+            
+            border: 0.3em;
+            border-radius: 1em;
+            height: 1em;
+            }
+
+    input   {
+            display: none;
+             }
+
+    section:has(input:checked) .navbar a {
+                             display: block;
+            
+                         }
+}
