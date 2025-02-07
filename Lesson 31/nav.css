@@ -1,0 +1,60 @@
+body {
+    background-color: #222;
+    font-family: Arial;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #001;
+    padding: 0 10%;
+}
+
+.navbar a {
+    color: #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+.navbar a:first-child {
+    font-size: 1.5em;
+    margin-right: 3em;
+    color: white;
+}
+
+.navbar a:last-child {
+    display: none;
+}
+
+/* sm styles*/
+@media (max-width: 720px) {
+    .navbar a {
+        display: none;
+    }
+    .navbar a:first-child,
+    .navbar a:last-child {
+    
+            display: inline-block;
+        }
+        .navbar a:last-child {
+            position: absolute;
+            right: 10%;
+            top:0.75em; 
+
+            border: 1px;
+            border-radius: 1em;
+            height: 1em;
+        }
+        .navbar:target a:nth-child(2),
+        .navbar:target a:nth-child(3),
+        .navbar:target a:nth-child(4),
+        .navbar:target a:nth-child(5) 
+         {
+            display: block;
+
+        }
+}
