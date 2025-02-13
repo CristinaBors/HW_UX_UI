@@ -1,0 +1,22 @@
+body {
+  background-color: #333;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  font-size: 25px;
+  background: linear-gradient(darkgreen, lightgreen, darkgreen);
+  border: 3px solid darkgreen;
+  color: #333;
+  box-shadow: 0 0 5px 3px #111;
+  text-shadow: 0.5px 0.5px 1px darkgreen;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(lightgreen, darkgreen, lightgreen);
+  border-color: green;
+  box-shadow: 0 0 2px 1px #111;
+}/*# sourceMappingURL=style.css.map */
