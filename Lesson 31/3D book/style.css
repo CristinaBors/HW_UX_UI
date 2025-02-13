@@ -1,0 +1,137 @@
+body {
+    background-color: #456;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.book {
+    position: relative;
+    width: 148.5mm;
+    height: 210mm;
+    
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+    /*transform: rotateY(-25deg) ;*/
+    transform-style: preserve-3d;
+    transition-duration: 0.1s;
+    perspective: 1500px;
+            
+}
+
+input {
+    display: none;
+}
+
+.book .front-cover, 
+.book .back-cover {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /*border: 3px solid red;*/
+    background-color: #ca965c;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform-style: preserve-3d;
+    background-image: linear-gradient(90deg, transparent, rgb(66, 65, 65) 0mm, transparent, rgb(226, 218, 218));
+    transition: 0.1s;
+    transform-origin: center left;
+    
+}
+
+.book .back-cover {
+    
+    background-color: #1a264b;
+    transform: translateZ(-25mm);
+    z-index: -1;
+
+}
+
+.front-cover label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#checkbox-cover:checked ~ .book {
+    transform: translateX(280px);
+}
+#checkbox-cover:checked ~ .book .front-cover {
+    transform: rotateY(-180deg);
+    background-color: #ca965c;
+    
+}
+
+.book .front-cover img {
+    width: inherit;
+    height: 80%;
+  
+}
+
+.book .front-cover h1 {
+    font-size: 250%;
+    color: #1a264b;
+}
+
+.book .front-cover h1,
+.book .front-cover h2,
+.book .front-cover h3 {
+    padding-left: 5%;
+    margin: 1% 0;
+}
+
+
+
+.book__pg{
+    position: absolute;
+    background-color: azure;
+        margin: 0;
+        width: 95%;
+        height: 97%;
+        /*border: 3px solid red;*/
+        z-index: 1;
+        
+        transform: translateZ(-25mm);
+
+        margin-top: 10px;
+}
+
+   
+
+
+
+.book .pages {
+    height: inherit;
+    width: 10mm;
+    
+    position: absolute;
+    z-index: 2;
+    right: -10mm;
+    transform: rotateY(85deg);
+    transform-origin: left;
+
+    background-image: repeating-linear-gradient(90deg, black, white 0.5mm) ;
+    
+}
+
+
+.book .line {
+    height: inherit;
+    width: 3mm;
+    
+    background-color: #333;
+    
+    position: absolute;
+    z-index: 2;
+}
+
+ 
+
+ 
+        
+               
