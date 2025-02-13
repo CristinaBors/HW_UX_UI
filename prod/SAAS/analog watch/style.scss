@@ -1,0 +1,76 @@
+$darkColor: #224;
+$mainMaterialColor: DarkGoldenRod;
+
+$mainSize: 500px;
+
+$innerSize: 0.9 * $mainSize;
+$innerRadius: $innerSize / 2;
+$dasW: 0.03 * $mainSize;
+$dasH: 0.005 * $mainSize;
+
+
+@mixin box($w, $h, $bgc) {
+    width: $w;
+    height: $h;
+    background-color: $bgc;
+}
+
+@mixin center {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+}
+
+@mixin round {
+    border-radius: 100%;
+}
+
+// COMMONSTYLES
+body {
+    background-color: $darkColor;
+}
+
+// COMPONENT STYLES
+
+// ROOT CONTAINER
+
+.watch {
+    
+    @include box($mainSize, $mainSize, $mainMaterialColor);
+    @include center;
+    @include round;
+
+    .screen {
+        
+        @include box($innerSize, $innerSize, darken($mainMaterialColor, 12%));
+        @include center;
+        @include round;
+
+
+        .dash {
+
+            @include box($dasW, $dasH, lighten($mainMaterialColor, 22%));
+            @include center;
+            margin-right: $dasW;
+
+            transform-origin: - $innerRadius + 2 * $dasW 0; 
+            
+            @for $n from 1 through 60 {
+
+           
+            &:nth-child( #{$n} ) {
+                transform: rotate(($n - 1) * 6deg);
+            
+                @if ($n - 1) % 5 == 0 {
+                    background-color: red;
+                }
+            
+            }
+                         }
+            
+        }
+    }
+}

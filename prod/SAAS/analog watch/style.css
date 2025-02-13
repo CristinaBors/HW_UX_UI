@@ -1,0 +1,233 @@
+body {
+  background-color: #224;
+}
+
+.watch {
+  width: 500px;
+  height: 500px;
+  background-color: DarkGoldenRod;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+.watch .screen {
+  width: 450px;
+  height: 450px;
+  background-color: #7e5c08;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+.watch .screen .dash {
+  width: 15px;
+  height: 2.5px;
+  background-color: #f4c040;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-right: 15px;
+  transform-origin: -195px 0;
+}
+.watch .screen .dash:nth-child(1) {
+  transform: rotate(0deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(2) {
+  transform: rotate(6deg);
+}
+.watch .screen .dash:nth-child(3) {
+  transform: rotate(12deg);
+}
+.watch .screen .dash:nth-child(4) {
+  transform: rotate(18deg);
+}
+.watch .screen .dash:nth-child(5) {
+  transform: rotate(24deg);
+}
+.watch .screen .dash:nth-child(6) {
+  transform: rotate(30deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(7) {
+  transform: rotate(36deg);
+}
+.watch .screen .dash:nth-child(8) {
+  transform: rotate(42deg);
+}
+.watch .screen .dash:nth-child(9) {
+  transform: rotate(48deg);
+}
+.watch .screen .dash:nth-child(10) {
+  transform: rotate(54deg);
+}
+.watch .screen .dash:nth-child(11) {
+  transform: rotate(60deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(12) {
+  transform: rotate(66deg);
+}
+.watch .screen .dash:nth-child(13) {
+  transform: rotate(72deg);
+}
+.watch .screen .dash:nth-child(14) {
+  transform: rotate(78deg);
+}
+.watch .screen .dash:nth-child(15) {
+  transform: rotate(84deg);
+}
+.watch .screen .dash:nth-child(16) {
+  transform: rotate(90deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(17) {
+  transform: rotate(96deg);
+}
+.watch .screen .dash:nth-child(18) {
+  transform: rotate(102deg);
+}
+.watch .screen .dash:nth-child(19) {
+  transform: rotate(108deg);
+}
+.watch .screen .dash:nth-child(20) {
+  transform: rotate(114deg);
+}
+.watch .screen .dash:nth-child(21) {
+  transform: rotate(120deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(22) {
+  transform: rotate(126deg);
+}
+.watch .screen .dash:nth-child(23) {
+  transform: rotate(132deg);
+}
+.watch .screen .dash:nth-child(24) {
+  transform: rotate(138deg);
+}
+.watch .screen .dash:nth-child(25) {
+  transform: rotate(144deg);
+}
+.watch .screen .dash:nth-child(26) {
+  transform: rotate(150deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(27) {
+  transform: rotate(156deg);
+}
+.watch .screen .dash:nth-child(28) {
+  transform: rotate(162deg);
+}
+.watch .screen .dash:nth-child(29) {
+  transform: rotate(168deg);
+}
+.watch .screen .dash:nth-child(30) {
+  transform: rotate(174deg);
+}
+.watch .screen .dash:nth-child(31) {
+  transform: rotate(180deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(32) {
+  transform: rotate(186deg);
+}
+.watch .screen .dash:nth-child(33) {
+  transform: rotate(192deg);
+}
+.watch .screen .dash:nth-child(34) {
+  transform: rotate(198deg);
+}
+.watch .screen .dash:nth-child(35) {
+  transform: rotate(204deg);
+}
+.watch .screen .dash:nth-child(36) {
+  transform: rotate(210deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(37) {
+  transform: rotate(216deg);
+}
+.watch .screen .dash:nth-child(38) {
+  transform: rotate(222deg);
+}
+.watch .screen .dash:nth-child(39) {
+  transform: rotate(228deg);
+}
+.watch .screen .dash:nth-child(40) {
+  transform: rotate(234deg);
+}
+.watch .screen .dash:nth-child(41) {
+  transform: rotate(240deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(42) {
+  transform: rotate(246deg);
+}
+.watch .screen .dash:nth-child(43) {
+  transform: rotate(252deg);
+}
+.watch .screen .dash:nth-child(44) {
+  transform: rotate(258deg);
+}
+.watch .screen .dash:nth-child(45) {
+  transform: rotate(264deg);
+}
+.watch .screen .dash:nth-child(46) {
+  transform: rotate(270deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(47) {
+  transform: rotate(276deg);
+}
+.watch .screen .dash:nth-child(48) {
+  transform: rotate(282deg);
+}
+.watch .screen .dash:nth-child(49) {
+  transform: rotate(288deg);
+}
+.watch .screen .dash:nth-child(50) {
+  transform: rotate(294deg);
+}
+.watch .screen .dash:nth-child(51) {
+  transform: rotate(300deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(52) {
+  transform: rotate(306deg);
+}
+.watch .screen .dash:nth-child(53) {
+  transform: rotate(312deg);
+}
+.watch .screen .dash:nth-child(54) {
+  transform: rotate(318deg);
+}
+.watch .screen .dash:nth-child(55) {
+  transform: rotate(324deg);
+}
+.watch .screen .dash:nth-child(56) {
+  transform: rotate(330deg);
+  background-color: red;
+}
+.watch .screen .dash:nth-child(57) {
+  transform: rotate(336deg);
+}
+.watch .screen .dash:nth-child(58) {
+  transform: rotate(342deg);
+}
+.watch .screen .dash:nth-child(59) {
+  transform: rotate(348deg);
+}
+.watch .screen .dash:nth-child(60) {
+  transform: rotate(354deg);
+}/*# sourceMappingURL=style.css.map */
