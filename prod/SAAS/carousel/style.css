@@ -1,0 +1,504 @@
+body {
+  background-color: #222;
+  color: lawngreen;
+}
+
+#carousel {
+  width: 1200px;
+  height: 800px;
+  border: 5px solid #3c3c3c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+#carousel .slide {
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+  grid-template-rows: repeat(8, 100px);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+}
+#carousel .slide > div:nth-child(1) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(2) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(3) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(4) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(5) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(6) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(7) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(8) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(9) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(10) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(11) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(12) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: 0px;
+}
+#carousel .slide > div:nth-child(13) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(14) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(15) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(16) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(17) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(18) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(19) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(20) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(21) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(22) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(23) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(24) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -100px;
+}
+#carousel .slide > div:nth-child(25) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(26) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(27) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(28) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(29) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(30) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(31) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(32) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(33) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(34) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(35) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(36) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -200px;
+}
+#carousel .slide > div:nth-child(37) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(38) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(39) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(40) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(41) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(42) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(43) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(44) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(45) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(46) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(47) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(48) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -300px;
+}
+#carousel .slide > div:nth-child(49) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(50) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(51) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(52) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(53) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(54) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(55) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(56) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(57) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(58) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(59) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(60) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -400px;
+}
+#carousel .slide > div:nth-child(61) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(62) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(63) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(64) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(65) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(66) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(67) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(68) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(69) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(70) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(71) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(72) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -500px;
+}
+#carousel .slide > div:nth-child(73) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(74) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(75) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(76) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(77) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(78) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(79) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(80) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(81) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(82) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(83) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(84) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -600px;
+}
+#carousel .slide > div:nth-child(85) {
+  background-image: url(images/5.jpg);
+  background-position-x: 0px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(86) {
+  background-image: url(images/5.jpg);
+  background-position-x: -100px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(87) {
+  background-image: url(images/5.jpg);
+  background-position-x: -200px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(88) {
+  background-image: url(images/5.jpg);
+  background-position-x: -300px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(89) {
+  background-image: url(images/5.jpg);
+  background-position-x: -400px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(90) {
+  background-image: url(images/5.jpg);
+  background-position-x: -500px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(91) {
+  background-image: url(images/5.jpg);
+  background-position-x: -600px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(92) {
+  background-image: url(images/5.jpg);
+  background-position-x: -700px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(93) {
+  background-image: url(images/5.jpg);
+  background-position-x: -800px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(94) {
+  background-image: url(images/5.jpg);
+  background-position-x: -900px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(95) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1000px;
+  background-position-y: -700px;
+}
+#carousel .slide > div:nth-child(96) {
+  background-image: url(images/5.jpg);
+  background-position-x: -1100px;
+  background-position-y: -700px;
+}/*# sourceMappingURL=style.css.map */

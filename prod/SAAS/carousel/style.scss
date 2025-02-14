@@ -1,0 +1,59 @@
+$darkColor: #222;
+$cols: 12;
+$rows: 8;
+$size: 100px;
+
+@mixin center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+body {
+    background-color: $darkColor;
+    color: lawngreen;
+}
+
+#carousel {
+    width: $cols * $size;
+    height: $rows * $size;
+    border: $size * 0.05 solid lighten($darkColor,10%) ;
+    @include center;
+
+    .slide {
+        display: grid;
+        grid-template-columns: repeat($cols, $size);
+        grid-template-rows: repeat($rows, $size);
+        width: inherit;
+        height: inherit;
+        text-align: center;
+
+        $offX: 0;
+        $offY: 0;
+    
+
+        @for $n from 1 through 96 {
+
+        &>div:nth-child(#{$n}) {
+                background-image: url(images/5.jpg);
+                background-position-x: $offX * - $size;
+                background-position-y: $offY * - $size;
+            }
+
+
+                        $offX: $offX + 1;
+            
+                        @if $offX % $cols==0 {
+                            $offX: 0;
+                            $offY: $offY + 1;
+                        }
+        }
+
+        
+        
+        
+    }
+}
