@@ -1,7 +1,7 @@
 $darkColor: #222;
-$cols: 12;
-$rows: 8;
-$size: 100px;
+$cols: 36;
+$rows:24;
+$size: 33px;
 
 @mixin center {
     position: absolute;
@@ -10,6 +10,12 @@ $size: 100px;
     left: 0;
     bottom: 0;
     margin: auto;
+}
+
+@mixin effectFadeOut {
+    animation: fadeOut 1.5s ;
+    animation-delay:  .2s * random(5);
+
 }
 
 body {
@@ -35,12 +41,18 @@ body {
         $offY: 0;
     
 
-        @for $n from 1 through 96 {
+        @for $n from 1 through $cols * $rows  {
 
         &>div:nth-child(#{$n}) {
                 background-image: url(images/5.jpg);
                 background-position-x: $offX * - $size;
                 background-position-y: $offY * - $size;
+                //animation-delay: 1s * $offX / $rows;//
+                //animation-delay: 1s * ($offX / $cols + $offX / $ rows);//
+                
+                animation-fill-mode: forwards;
+                @include effectFadeOut();
+                
             }
 
 
@@ -52,7 +64,10 @@ body {
                         }
         }
 
-        
+        @keyframes fadeOut {
+            from { opacity: 1;}
+            to { opacity: 0;}
+        }
         
         
     }
