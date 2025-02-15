@@ -12,9 +12,22 @@ $size: 33px;
     margin: auto;
 }
 
-@mixin effectFadeOut {
+//@mixin effectFadeOut {
     animation: fadeOut 1.5s ;
     animation-delay:  .2s * random(5);
+
+   //}///
+
+@mixin effectFadeOut {
+    animation: {
+        0%{ background-image: url(images/5.jpg) }
+        33%{ background-image: url(images/6.jpg)}
+           
+        66%{background-image: url(images/7.jpg)}
+            
+    }
+    animation-delay: .2s * random(5);
+    
 
 }
 
@@ -44,7 +57,7 @@ body {
         @for $n from 1 through $cols * $rows  {
 
         &>div:nth-child(#{$n}) {
-                background-image: url(images/5.jpg);
+                //background-image: url(images/5.jpg);//
                 background-position-x: $offX * - $size;
                 background-position-y: $offY * - $size;
                 //animation-delay: 1s * $offX / $rows;//

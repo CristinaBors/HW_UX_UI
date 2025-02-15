@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX | Navbar</title>
+
+    <style>
+        body {
+            margin: 0;
+
+        }
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            background-color: #111;
+        }
+
+        .navbar .brand {
+            font-size: 2em;
+            padding: 10px 30px;
+           
+        }
+
+        .navbar a {
+            color: white;
+            background-color: #555;
+        }
+
+        .navbar a:not(.brand) {
+            width: 50px;
+            border: 1px solid red;
+            padding: 10px 20px;
+        }
+
+        /*-------FLEX------*/
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .navbar a {
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+        .navbar .brand {
+             flex-grow: 2;
+        }
+
+        .navbar a:nth-child(4) {
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="brand" href="">BRAND</a>
+        <a href="">link 1</a>
+        <a href="">link 2</a>
+        <a href="">link 3</a>
+        <a href="">link 4</a>
+        <a href="">link 5</a>
+    </nav>
+    
+</body>
+</html>
