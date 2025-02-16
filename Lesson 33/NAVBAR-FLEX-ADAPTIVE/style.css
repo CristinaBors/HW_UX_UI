@@ -1,0 +1,84 @@
+
+
+body {
+    font-family: "Gravitas One", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #223;
+    background-image: url(images/tex2.png);
+    height: 2000px;
+}
+
+.navbar {
+    background-color: #3349;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul a {
+    padding: 0 1em;
+    border-right: 1px solid #667;
+}
+
+.navbar ul li:last-child a {
+    border: none;
+}
+.navbar a {
+    color: white;
+    
+}
+
+.navbar .toggler {
+    display: none;
+}
+
+@media (max-width:460px) {
+
+        body {
+            background-image: url(images/tex2.png);
+            }
+            .navbar .toggler {
+                display: inline;
+            }
+
+            .navbar ul {
+                display: none;
+            }
+
+
+        .navbar:target ul {
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 70px;
+            /*bottom: 50%;*/
+        } 
+
+        .navbar:target ul a {
+            padding:  1em; 
+            display: block;
+            border-right: none;
+            border-bottom: 1px solid #667;
+        }
+        
+    }
+
+    .navbar.scrolled {
+                    background-color: red;
+                }
+    

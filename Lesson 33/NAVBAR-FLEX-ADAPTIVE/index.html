@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR FLEX ADAPTIVE</title>
+    <link rel="icon" href="images/Martz90-Hex-Game-cut-the-robe.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+
+    <nav class="navbar" id="main-menu">
+        <a href="">
+            <picture>
+ 
+                <source
+                    srcset="images/logo128.png"
+                    media="(min-width: 461px)"
+                >
+
+                <img src="images/logo64.png" 
+                alt="robe icon">
+            </picture>
+        </a>
+
+        <a class="toggler" href="#main-menu">
+            <i class="fa-solid fa-bars"></i></a>
+
+        <ul>
+            <li><a href="">Forum</a></li>
+            <li><a href="">Top Players</a></li>
+            <li><a href="">Sign up</a></li>
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+     <script>       
+                $(window).scroll(function () {
+                                    var windowYmax = 50;
+                                    var scrolledY = $(window).scrollTop();
+
+                                    if (scrolledY > windowYmax) {
+
+                                        $('.navbar').addClass("scrolled");
+                                    } else {
+                                        $('.navbar').removeClass("scrolled");
+                                        
+                                    }
+                                });
+               
+    </script>
+
+</body>
+</html>
