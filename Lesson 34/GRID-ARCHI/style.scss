@@ -1,0 +1,18 @@
+/*.heebo-<uniquifier> {
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}*/
+@import "_reset.scss";
+@import "_grid.scss";
+@import"_variables.scss";
+@import "_header.scss";
+@mixin font {  
+    font-family: "Heebo",serif;
+    font-size: 16px; //1rem
+}
+
+body {
+    @include font;
+}

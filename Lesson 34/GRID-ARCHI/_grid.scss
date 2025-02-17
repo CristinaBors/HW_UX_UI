@@ -1,0 +1,10 @@
+.grid__one-two {
+    display: grid;
+
+    grid-template-columns: 15% 1fr 2fr 15%;
+    grid-template-rows: 10% 1fr 1fr 10%;
+}
+
+.full-height {
+    height: 100vh;
+}

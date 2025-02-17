@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #333;
+}
+
+.navbar {
+    display: grid;
+
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.navbar .nav {
+    background-color: #111;
+    grid-column: 2 /12;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    padding: 1%;
+}
+
+.navbar .nav a:not(:first-child),
+.navbar .top a:not(:first-child) {
+    text-align: right;
+}
+
+.navbar .nav a {
+    color: white;
+}
+
+.navbar .top .hours {
+    text-align: right;
+}
+
+.navbar .top a {
+    color: #444;
+}
+
+.navbar .nav .brand {
+    grid-column: 1 / 5;
+}
+
+.navbar .nav .brand img {
+    height: 75%;
+}
+
+.navbar .top {
+    background-color: #DDD;
+
+    grid-column: 2 / 12;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    padding: 1%;
+}
+
+.navbar .top .hours {
+    grid-column: 2 / 10;
+}
