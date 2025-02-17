@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    --navbar-h: 3.15em;
+    --spacer: 1em;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    flex-shrink: 1;
+        flex-grow: 1;
+}
+
+.navbar {
+    background-color: #234;
+    color: white;
+} 
+
+.navbar,
+.sidebar,
+.dashboard {
+    padding: var(--spacer);
+}
+
+.row {
+    display: flex;
+    flex-grow: 100;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #435;
+    color: white;
+   /* height: calc(100vh - var(--navbar-h) - 2 * var(--spacer));*/
+    
+    /*width: 100%;8?
+    /*float: left;*/
+    /*min-width: 250px;*/
+    flex-shrink: 3;
+    
+}
+
+.dashboard {
+    background-color: #222;
+        color: white;
+       /* height: calc(100vh - var(--navbar-h) - 2 * var(--spacer));*/
+        
+        /*width: 100%;*/
+        /*float: right;*/
+        
+        flex-grow: 50;
+}
+
+/* DYNAMIC */
+#sidebar .ex {
+    display: none;
+}
+
+#sidebar:target .ex {
+    display: inline;
+}
