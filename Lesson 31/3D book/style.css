@@ -15,7 +15,7 @@ body {
     font-family: "Adamina", serif;
     font-weight: 400;
     font-style: normal;
-    /*transform: rotateY(-25deg) ;*/
+    transform: rotateY(-25deg) ;
     transform-style: preserve-3d;
     transition-duration: 0.1s;
     perspective: 1500px;
@@ -68,8 +68,9 @@ input {
 }
 
 .book .front-cover img {
-    width: inherit;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100px);
   
 }
 
@@ -87,19 +88,19 @@ input {
 
 
 
-.book__pg{
+/*.book__pg{
     position: absolute;
     background-color: azure;
         margin: 0;
         width: 95%;
         height: 97%;
-        /*border: 3px solid red;*/
+        /*border: 3px solid red;
         z-index: 1;
         
         transform: translateZ(-25mm);
 
         margin-top: 10px;
-}
+}*/
 
    
 
