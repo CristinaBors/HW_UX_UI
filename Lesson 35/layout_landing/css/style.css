@@ -1,3 +1,74 @@
 body {
-    min-height: 3000px;
+    min-height: 6000px;
+}
+
+.newsfeed {
+    background-color: #333;
+}
+
+
+/*NEWSFEED carousel*/
+#NEWSFEED .carousel-indicators {
+    background-color: red;
+
+    margin:0;
+    left: auto;
+    right: -100%;
+    height: 100%;
+
+
+
+}
+
+#NEWSFEED .carousel-indicators button {
+    text-indent: 0;
+    width: 3em;
+    height: 3em;
+    position: relative;
+
+}
+
+#NEWSFEED .carousel-indicators button.active::before {
+   display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px dashed green;
+
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    animation: rotate 5s infinite linear;
+    
+}
+
+#NEWSFEED .carousel-inner {
+    overflow: visible;
+}
+
+#NEWSFEED .carousel-caption {
+    background-color: green;
+    left: 228%;
+    right: -328%;
+    top: 0;
+    text-align: left;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pricing {
+    background-color: #eef;
+}
+
+.pricing .card {
+    position: relative;
+    top: -1em;
+    left: 2em;
 }
