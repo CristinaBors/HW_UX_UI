@@ -18,7 +18,7 @@
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
         "defaults"
-    ]
+    ],
 
     "liveSassCompile.settings.includeItems": [
         "style.css",
