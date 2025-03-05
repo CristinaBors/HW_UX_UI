@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 1.DATA
+        const productName = "Samsung XXII"
+        const productPrice = 1000.50
+
+        // 2.CATALOG
+
+        let q = +prompt(
+            "CATALOG" + "\n" + "--------------------" + "\n" +
+            productName + "\n"
+            +
+            productPrice + "\n"
+            +
+            "------------------------------"
+        )
+
+        //alert(typeof q)
+
+        //3.CALCULUS
+
+        let total = productPrice * q
+
+        //4.OUTPUT
+        alert("Your order: " +"\n" + productName + "*" + q + "=" + total)
+
+    </script>
+
+    
+</body>
+</html>
+
+
