@@ -17,11 +17,11 @@
 
     <div class="controls">
     <button onclick="
-         if (robotRight * STEP <= 0) {
-            robotRight++
+         if (robotLeft * STEP > 0) {
+            robotLeft--
         }
         
-        console.log(robotRight)
+        console.log(robotLeft)
         renderR()
         ">◀</button>
     <button 

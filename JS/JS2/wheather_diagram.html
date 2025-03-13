@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWEATHER APP</title>
+</head>
+<body>
+
+    <div id="container">
+        <!--.innerHTML-->
+    </div>
+
+    
+
+    <script>
+        let tempC = 15
+        let rainy =  true
+        let sunny = false
+        let geolocation = "Chisinau"
+        let icon = ""
+        if (rainy) {
+            icon = "images/Status-weather-showers-icon.png"
+        }
+        if (sunny) {
+                
+            icon = "images/Status-weather-clear-icon.png"
+        } 
+            
+        
+
+
+        //logic
+        container.innerHTML= `
+        <h2>${geolocation}</h2>
+        <img src= "${icon}"/>
+
+
+        <p>${tempC} ℃</p> `
+    </script>
+    
+</body>
+</html>
