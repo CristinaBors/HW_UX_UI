@@ -20,7 +20,7 @@
        function moveUp () {
             let mt = parseInt(box.style.marginTop)
                 if (mt > 0) {  // Check if the margin is greater than 0
-               mt--;       // Move up
+               mt-= 5;       // Move up
                box.style.marginTop = mt + 'px';
            }
             
@@ -29,7 +29,7 @@
         function down() {
                 let mt = parseInt(box.style.marginTop)
                 if (mt >= 0) {
-                mt++
+                mt+= 5
                 box.style.marginTop = mt + 'px'
                 }
             }
