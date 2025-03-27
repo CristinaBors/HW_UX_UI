@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D LOOP with FOR</title>
+    <style> 
+        body {background-color: #333;
+                color: white;
+                line-height: 16px;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div id = "container">
+
+    </div>
+   <!-- <script>
+
+        let html = ``
+        for (let r = 1; r <= 10; r++) {
+            for (let c = 1; c <= 10; c++) {
+               if (c == 1 ) { html += `▩`}
+                else {
+                    html += `▢`
+                }
+               }
+                
+            
+
+            html += `<br>`
+        }
+
+        container.innerHTML = html
+
+    </script> -->
+
+    <script>
+        let html = ``;
+        for (let r = 1; r <= 10; r++) {
+            for (let c = 1; c <= 10; c++) {
+                // Check if it's the first row, last row, first column, or last column
+                if (r == 1 || r == 10 || c == 1 || c == 10) {
+                    html += `▩`;
+                } else {
+                    html += `□`;
+                }
+            }
+            html += `<br>`;
+        }
+
+        container.innerHTML = html;
+    </script>
+    
+</body>
+</html>
