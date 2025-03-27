@@ -1,0 +1,68 @@
+
+<style>
+    #building, #user {
+        border: 5px solid black;
+        height: 1100px;
+        width: 100px;
+        float: left;
+    }
+
+    #user button {
+        width: 100px;
+        height: 100px;
+    }
+    #lift {
+        width: 100px;
+        height: 100px;
+        background-color: #345;
+
+        transition: 1s;
+    }
+
+</style>
+
+<div id = "building">
+
+    <div id="lift" style="transform: translateY(0px);">
+    
+    </div>
+   
+
+</div>
+
+
+<div id="user">
+    <button id="downBtn" onclick=" down; moveLift()">▼</button>
+    <button onclick=" floor=8; moveLift()">8</button>
+    <button onclick=" floor=7; moveLift()">7</button>
+    <button onclick=" floor=6; moveLift()">6</button>
+    <button onclick=" floor=5; moveLift()">5</button>
+    <button onclick=" floor=4; moveLift()">4</button>
+    <button onclick=" floor=3; moveLift()">3</button>
+    <button onclick=" floor=2; moveLift()">2</button>
+    <button onclick=" floor=1; moveLift()">1</button>
+    <button onclick=" floor=0; moveLift()">0</button>
+    <button id="upBtn"onclick=" up; moveLift()">▲</button>
+
+    
+
+</div>
+
+<script>
+
+    let floor = 0 
+
+    function moveLift() { 
+    let y = 800 - floor * 100
+
+    
+    lift.style = `transform: translateY(${y}px);`
+    if (floor > 0) { floor--; moveLift()
+}
+     if (floor < 9) { floor++; moveLift()
+}}
+
+        moveLift()
+</script>
+
+

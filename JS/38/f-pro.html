@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number and Transformation</title>
+    <style>
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="generateBtn">Generate and Transform</button>
+    <div id="result"></div>
+
+    <script>
+        // Function to produce a random integer between 1 and 10
+        function produce() {
+            return Math.floor(Math.random() * 10) + 1;
+        }
+
+        // Function to transform the value (divide by 2 and round)
+        function transform(n) {
+            return Math.round(n / 2);
+        }
+
+        // Function to display the result in a div with id #result
+        function consume(n) {
+            let resultDiv = document.getElementById('result');
+            resultDiv.textContent = `Transformed value: ${n}`;
+        }
+
+        // Event listener for button click
+        document.getElementById('generateBtn').addEventListener('click', function () {
+            let randomValue = produce();  // Generate random number
+            let transformedValue = transform(randomValue);  // Transform the value
+            consume(transformedValue);  // Display result
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<!--Explanation of the functions:
+produce(): This generates a random integer between 1 and 10.
+
+Math.random() produces a number between 0 and 1.
+
+Math.floor(Math.random() * 10) gives a number between 0 and 9.
+
+Adding +1 shifts the range to 1 through 10.
+
+transform(n): This function divides the number n by 2 and rounds the result to the nearest integer using Math.round().
+
+consume(n): This function takes the transformed number and outputs it inside a div with the id of #result. The text content of this div is updated to show the transformed value.
+
+User Interaction:
+When the "Generate and Transform" button is clicked:
+
+A random number between 1 and 10 is generated.
+
+The number is divided by 2 and rounded.
+
+The result is displayed in the #result div.
+
+
+
+
+
+Math.floor()
+Description: Math.floor() rounds a number down to the nearest integer, toward negative infinity.
+
+Example:
+
+Math.floor(4.7) → 4
+
+Math.floor(4.3) → 4
+
+Math.floor(-4.7) → -5
+
+Math.floor(-4.3) → -5
+
+Use case: This method is useful when you always want to round down, regardless of whether the fractional part is greater than or less than 0.5.
+
+2. Math.round()
+Description: Math.round() rounds a number to the nearest integer. If the fractional part is 0.5 or greater, it rounds up; if it's less than 0.5, it rounds down.
+
+Example:
+
+Math.round(4.7) → 5
+
+Math.round(4.3) → 4
+
+Math.round(-4.7) → -5
+
+Math.round(-4.3) → -4
+
+Use case: This method is used when you want to round a number to the closest integer, where 0.5 rounds up, and values below 0.5 round down.
+
+3. Math.ceil()
+Description: Math.ceil() rounds a number up to the nearest integer, away from zero.
+
+Example:
+
+Math.ceil(4.7) → 5
+
+Math.ceil(4.3) → 5
+
+Math.ceil(-4.7) → -4
+
+Math.ceil(-4.3) → -4
+
+Use case: This method is useful when you always want to round up to the next integer, regardless of the fractional part.
+
+Summary:
+Method	Behavior	Example
+Math.floor()	Rounds down (toward negative infinity).	Math.floor(4.7) → 4
+Math.round()	Rounds to the nearest integer (rounds up if >= 0.5, down if < 0.5).	Math.round(4.7) → 5
+Math.ceil()	Rounds up (away from zero).	Math.ceil(4.3) → 5-->
