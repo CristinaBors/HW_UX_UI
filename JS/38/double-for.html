@@ -1,0 +1,35 @@
+<!-- 
+ <script>
+
+    let text = ``
+
+    for (let y=1; y<=10; y++) {
+       
+        for (let x=1; x<=10; x++) {
+            text += '#'
+        }
+            text += '\n'
+        }
+        console.log ( text )
+
+</script> 
+-->
+<script>
+
+    let text = ``
+
+    for (let y = 1; y <= 10; y++) {
+
+        for (let x = 1; x <= 10; x++) {
+           if ( y % 5 == 0) { 
+            text += '#'
+        } else { 
+        text += '*'
+        }
+        
+        }
+        text += '\n'
+    }
+    console.log(text)
+
+</script>
