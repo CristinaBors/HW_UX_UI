@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Drawer</title>
+
+    <style>
+        #drawer {
+            background-color: #BBB;
+            position: absolute;
+            top: 0;
+            /*left: -30%;*/
+            /*right: -30%;*/
+            width: 30%;
+            height: 100%;
+            transition: .5s
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <button onclick="openDrawer()">*</button>
+            <h1>THIS IS THE HEADER</h1>
+            <section>
+                <h2>Lorem ipsum dolor sit amet. </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt corporis veritatis itaque dolorem error voluptas sequi blanditiis unde, laboriosam quis illo similique quas nobis fugiat tenetur excepturi. Atque, iste quasi.</p>
+                <p>Corrupti aperiam eum suscipit quos sit aspernatur consequatur quia vitae, iusto voluptatibus, voluptas nam iste aut cumque ratione obcaecati veritatis at nihil deleniti ipsam fugit. Saepe cumque optio voluptatibus ducimus.</p>
+                <p>Quae voluptatem quasi eligendi omnis pariatur amet impedit. Veniam quidem minima omnis. Incidunt, doloremque velit. Voluptatibus nemo, placeat commodi veritatis voluptatum harum distinctio quae magnam eveniet itaque, fugit earum quidem!</p>
+                <p>Iure beatae vel odit a, quasi sed tenetur porro veniam quo quod autem ullam dicta nulla consectetur debitis qui eaque. Explicabo tempore ea hic! Temporibus saepe autem facilis voluptatibus dolor!</p>
+                <p>Magni, quis deleniti. Hic, autem dignissimos doloremque quo placeat, quod corrupti soluta ratione, exercitationem voluptate odit nostrum! Molestiae aperiam, dicta deleniti earum aliquam atque unde temporibus a, laudantium assumenda modi!</p>
+            </section>
+
+            <footer>
+                copyright &copy; 2025
+            </footer>
+        </header>
+    </main>
+
+    <!--DRAWER-->
+    <aside id="drawer">
+        <button onclick="closeDrawer()">x</button>
+        <h3>CREATE ACCOUNT</h3>
+        <form action="/register"></form>
+        <input type="text" placeholder="your name">
+        <br>
+        <input type="text" placeholder="password">
+        <br>
+        <button>SIGN UP</button>
+
+    </aside>
+    <!--DRAWER-->
+    <script>
+        //settings
+        let drawerLeft = true
+        if (drawerLeft) {
+            drawer.style.left = "-30%"
+        }
+        else {
+            drawer.style.right = "-30%"
+        }
+
+        function openDrawer () {
+            if (drawerLeft)  {
+                drawer.style.left = 0
+                 } else {
+                drawer.style.right = 0
+                }
+            }
+        function closeDrawer() {
+                if (drawerLeft) {
+                drawer.style.left = "-30%"
+            } else {
+                drawer.style.right = "-30%"
+            }
+            }
+
+    </script>
+    
+</body>
+</html>
