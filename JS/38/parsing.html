@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARSING</title>
+</head>
+<body>
+    <input id="phoneInput" type="text" placeholder="enter your phone number...">
+    <button onclick="parseNumber()">SEND</button>
+    <div id="result"></div>
+
+   
+
+   <!-- <script>
+        function parseNumber () {
+            let phoneNumber = phoneInput.value
+            if(
+                phoneNumber[0] == '+' || phoneNumber[0] == '0'
+              && phoneNumber[1] == '3'
+              && phoneNumber[2] == '7'
+              && phoneNumber[3] == '3'
+              
+              && phoneNumber[4] == '6'
+              && phoneNumber[5] == '8' || phoneNumber[5] == '9'
+            ) { 
+            alert('money sent')
+        }else {
+            alert('invalid phone number')
+        }
+        }
+        
+    </script>-->
+
+    <script>
+        function parseNumber() {
+            let phoneNumber = phoneInput.value
+            let resultDiv = document.getElementById('result')
+            if (
+                phoneNumber[0] == '+' || phoneNumber[0] == '0'
+                && phoneNumber[1] == '3'
+                && phoneNumber[2] == '7'
+                && phoneNumber[3] == '3'
+
+                && phoneNumber[4] == '6'
+                && phoneNumber[5] == '8' || phoneNumber[5] == '9'
+                && phoneNumber.length === 12 // Additional check for phone number length (optional)
+            ) {
+                resultDiv.innerHTML = 'Money sent';
+                resultDiv.style.color = 'green'; // Optional: style the result
+            } else {
+                resultDiv.innerHTML = 'Invalid phone number';
+                resultDiv.style.color = 'red'; // Optional: style the result
+            }
+        }
+
+    </script>
+
+    
+</body>
+</html>
