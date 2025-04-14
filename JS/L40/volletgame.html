@@ -38,11 +38,20 @@
         const B_HEIGHT = 50
         let bBottom = 0
         let bLeft = 0
+        let bSpeedV = 0
+        let bSpeedH = 0
 
         const P_WIDTH = 100
         const P_HEIGHT = 50
         let pBottom = 0
         let pLeft = 0
+        let pballInHands = true
+
+
+        let timerID = null
+        let score = 0
+
+        bLeft = P_WIDTH / 2 - B_WIDTH / 2 + pLeft
 
         field.style = `
                     width: ${F_WIDTH}px;
@@ -67,7 +76,7 @@
                 } 
         updateBallStyle()
         updatePlayerStyle()
-        function onKeyboard (){
+        /* function onKeyboard (){
             
             if ( event.code == 'ArrowLeft' & pLeft > 0) {
                 pLeft -= 10
@@ -79,16 +88,51 @@
             } else if (event.code == 'Space') {
                 throwball()
             }
+        } */
+
+
+        function onKeyboard () {
+            switch(event.code) {
+                case 'ArrowLeft':
+                if (pLeft >= 10) {
+                    pLeft -=10 }    
+                break;
+                case 'ArrowRight':
+                if (pLeft < F_WIDTH - P_WIDTH) { 
+                pLeft += 10 }
+                break;
+                case 'Space':
+                throwball() 
+                break;
+            } 
+
+            if (pballInHands) {
+                bLeft = P_WIDTH / 2 - B_WIDTH / 2 + pLeft
+            }
+            updatePlayerStyle()
+            updateBallStyle()
         }
 
         function throwball () {
-            setInterval( moveBall, 2000)
+            pballInHands = false
+            bSpeedH = Math.random() * 6 - 3
+            bSpeedV = 10
+            timerID = setInterval(moveBall, 100)
         }
         function moveBall () {
-            bBottom +=10
+            bBottom += bSpeedH
+            bLeft += bSpeedV 
+            if (bBottom > F_HEIGHT - B_HEIGHT) {
+                bSpeedV = - 10
+                bSpeedH = Math.random() * 10 - 5
+            }
+            if (bBottom <= 0) {
+                clearInterval(timerID)
+            }
             updateBallStyle()
         }
     </script>
     
 </body>
 </html>
+
