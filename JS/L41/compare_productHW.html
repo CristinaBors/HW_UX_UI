@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Comparison</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .yes {
+            color: green;
+        }
+
+        .no {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tablet Comparison</h2>
+
+    <div id="result"></div>
+
+    <script>
+        // Product 1 data
+        const product_1_name = "Table Space Y";
+        const product_1_price = 1000;   // USD
+        const product_1_diagonal = 5.2;    // inch
+        const product_1_memory = 8;      // GB
+        const product_1_battery = 6000;   // mAh
+
+        // Product 2 data (some from prompt)
+        const product_2_name = "Table Aero 11";
+        const product_2_price = parseFloat(prompt("Enter price for " + product_2_name, "900"));   // USD
+        const product_2_diagonal = 4.9;    // inch
+        const product_2_memory = parseInt(prompt("Enter memory (GB) for " + product_2_name, "6")); // GB
+        const product_2_battery = 5800;   // mAh
+
+        // Comparisons
+        const firstProdScreenBigger = product_1_diagonal > product_2_diagonal;
+        const firstProdCheaper = product_1_price < product_2_price;
+        const firstProdMoreMemory = product_1_memory > product_2_memory;
+        const firstProdBetterBattery = product_1_battery > product_2_battery;
+
+        function yesNo(value) {
+            return `<span class="${value ? 'yes' : 'no'}">${value ? 'yes' : 'no'}</span>`;
+        }
+
+        // Display comparison table
+        const result = document.getElementById("result");
+        result.innerHTML = `
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>${product_1_name}</th>
+                <th>${product_2_name}</th>
+                <th>Is Product 1 Better?</th>
+            </tr>
+            <tr>
+                <td>Screen Size (inches)</td>
+                <td>${product_1_diagonal}"</td>
+                <td>${product_2_diagonal}"</td>
+                <td>${yesNo(firstProdScreenBigger)}</td>
+            </tr>
+            <tr>
+                <td>Price (USD)</td>
+                <td>$${product_1_price}</td>
+                <td>$${product_2_price}</td>
+                <td>${yesNo(firstProdCheaper)}</td>
+            </tr>
+            <tr>
+                <td>Memory (GB)</td>
+                <td>${product_1_memory} GB</td>
+                <td>${product_2_memory} GB</td>
+                <td>${yesNo(firstProdMoreMemory)}</td>
+            </tr>
+            <tr>
+                <td>Battery (mAh)</td>
+                <td>${product_1_battery} mAh</td>
+                <td>${product_2_battery} mAh</td>
+                <td>${yesNo(firstProdBetterBattery)}</td>
+            </tr>
+        </table>
+    `;
+    </script>
+
+</body>
+
+</html>
