@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POCKET CALCULATOR</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+        #calculator {
+            border: 1px solid #555;
+            padding: 5px;
+        }
+        #resScreen {
+            border: 1px solid #555;
+            height: 30px;
+            color: white;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+        #inputs input {
+            display: block;
+            padding: 10px;
+        }
+
+        #controls {
+            margin-top: 10px;
+        }
+        #controls button {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="calculator">
+        <div id="resScreen">0</div>
+        <div id="inputs">
+            <input type="text" id="inputA" placeholder="value A">
+            <input type="text" id="inputB" placeholder="value B">
+            
+        </div>
+        <div id="controls">
+            <button onclick="add()">+</button>
+            <button onclick="subtract()">-</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="divide()">/</button>
+        </div>
+    </div>
+
+
+    <script>
+        function getInputs() {
+            let inputA = document.getElementById("inputA");
+            let inputB = document.getElementById("inputB");
+            let resScreen = document.getElementById("resScreen");
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+
+            if (isNaN(a) || isNaN(b)) {
+                resScreen.style.color = "red";
+                resScreen.innerHTML = "Error!";
+                return null;
+            }
+
+            resScreen.style.color = "white"; // reset color if input is valid
+            return { a, b, resScreen };
+        }
+
+        function add() {
+            const values = getInputs();
+            if (values) {
+                values.resScreen.innerHTML = values.a + values.b;
+            }
+        }
+
+        function subtract() {
+            const values = getInputs();
+            if (values) {
+                values.resScreen.innerHTML = values.a - values.b;
+            }
+        }
+
+        function multiply() {
+            const values = getInputs();
+            if (values) {
+                values.resScreen.innerHTML = values.a * values.b;
+            }
+        }
+
+        function divide() {
+            const values = getInputs();
+            if (values) {
+                if (values.b === 0) {
+                    values.resScreen.style.color = "red";
+                    values.resScreen.innerHTML = "Error!";
+                } else {
+                    values.resScreen.innerHTML = values.a / values.b;
+                }
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
