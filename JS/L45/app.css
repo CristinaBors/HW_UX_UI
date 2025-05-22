@@ -2,3 +2,9 @@ body {
     background-color: #333;
     color: white;
 }
+
+#cartDiv {
+    padding-top: 10px;
+    border-top: 1px solid white;
+    margin-top: 10px;
+}

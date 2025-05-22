@@ -1,7 +1,7 @@
   const products = [
     {  name: "uPhone x11",
       price: 1000,
-      available: 2,
+      available: 10,
       image: src = "images/phone1.png",
       rating: 5
     },
@@ -46,13 +46,39 @@
           // Optionally: reduce the available quantity
           product.available -= quantity;
         let item = {
-          quantity: quantity
+          quantity: quantity,
+          idx: idx,
         }
+        order.push(item)
+        renderCart()
+        
           // render(); // Re-render to update stock display
-      } else {
-          alert("❌ Quantity unavailable.");
+     /* } else {
+          alert("❌ Quantity unavailable."); */
       } 
       
+    }
+
+    function renderCart () {
+      cartDiv.innerHTML = `
+        <button onclick="renderCartDetails()">items: ${order.length} ⏷</button>`
+
+    }
+    function removeItem (idx) {
+      order.splice(idx,1)
+      renderCartDetails()
+    }
+    function renderCartDetails () {
+      cartDetailsDiv.innerHTML = `<ol>`
+      let total = 0
+      for(let i=0; i < order.length; i++) {
+        let selectedIdx = order[i].idx
+        cartDetailsDiv.innerHTML += `<li>${products[selectedIdx].name} x ${order[i].quantity}
+        <button onclick="removeItem(${i})">x</button></li>`
+        total += order[i].quantity * products[selectedIdx].price
+      }
+      cartDetailsDiv.innerHTML += `<li>total: ${total}</li>`
+      cartDetailsDiv.innerHTML += `</ol>`
     }
 
   function render() {
@@ -94,14 +120,14 @@
                       stars = `★☆☆☆☆`} */
 
 
-  /*let stars = ``
+  let stars = ``
                       for (let j = 1; j <= 5; j++) {
                         if (j <= products[i].rating) {
                             stars += "★";
                           } else {
                             stars += "☆";
                           }
-                        } */
+                        } 
 
     /*?????for (let i = 0; i < products.length; i++) {
       let stars = "";
@@ -118,7 +144,7 @@
 
 
       //HW: 5.4
-    let stars = "☆☆☆☆☆"
+  /*  let stars = "☆☆☆☆☆"
       if(products[i]. rating >= 0.5 && products[i].rating <= 1 ) {
           stars = `★☆☆☆☆`
       } else if (products[i]. rating >= 1.5 && products[i].rating <= 2.4) {
@@ -128,7 +154,7 @@
           else if (products[i]. rating >= 3.5 && products[i].rating <= 4.4) {
                 stars = `★★★★☆`}
           else if (products[i]. rating >= 4.5 && products[i].rating <= 5.0) {
-                      stars = `★★★★★`}     
+                      stars = `★★★★★`}  */   
                       
 
   /*HW: 5.3
